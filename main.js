@@ -34,6 +34,7 @@ $(document).ready(function () {
             alert("Buy one thing to save the word")
         } else {
             alert("🎉 Checkout Success: " + total + " thank you for saving the word ")
+            total = 0
             $(".add").text(total.toFixed(2))
         }
     })

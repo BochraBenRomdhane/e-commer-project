@@ -39,11 +39,12 @@ $(document).ready(function () {
     })
     $(".cancel").click(function () {
         const price = parseFloat($(this).data("price"));
-        if (total -= price > 0) {
-            total = 0
+        if (total - price > 0) {
+            total = total - price
             $(".add").text(total.toFixed(2))
             alert("You will abandon the product");
         } else {
+            total = 0
             $(".add").text(total.toFixed(2));
             alert("You will abandon the product");
         }

@@ -1,0 +1,59 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-image: url("https://images.pexels.com/photos/886521/pexels-photo-886521.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.titre {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sous-tit {
+    margin-top: -20px;
+}
+
+.box1 {
+    text-align: center;
+    border: solid black;
+    border-radius: 3ch;
+    margin-left: 300px;
+    margin-right: 300px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 100px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6)
+}
+
+.btn {
+    margin-bottom: 40px;
+    background-color: rgb(112, 171, 112);
+    font-size: 20px;
+    border-radius: 1ch;
+}
+
+/* .checkout {
+    background-color: transparent;
+    text-align: center;
+    height: 400px;
+    width: 400px;
+    margin-left: 600px;
+    margin-top: 150px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+    border-radius: 1ch;
+}
+
+.check {
+    font-size: 26px;
+    margin-top: 300px;
+    background-color: rgb(112, 171, 112);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+    border-radius: 1ch;
+} */

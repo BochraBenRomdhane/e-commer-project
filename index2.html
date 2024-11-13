@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco-product</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.js"
+        integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <p id="tit">Eco-word</p>
+        <form class="search-form" action="/search" method="GET">
+            <input type="text" name="query" placeholder="Search products..." id="int">
+            <button id="search" type="submit">🔍</button>
+        </form>
+        <br>
+        <div>
+            <button class="cart">🛒</button>
+            <div class="add">0</div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="products" id="products">
+        </div>
+    </div>
+    <div>
+
+
+        <script src="main.js"></script>
+</body>
+
+</html>

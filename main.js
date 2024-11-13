@@ -17,8 +17,8 @@ $(document).ready(function () {
                 <img src="${product.image}" alt="${product.name}">
                 <h3>${product.name}</h3>
                 <p>$${product.price}</p>
-                <button class="addcart" data-name="${product.name}" data-price="${product.price}">Add to Cart</button>
-                <button class="cancel" data-name="${product.name}" data-price="${product.price}">cancel</button>
+                <button class="addcart" name="${product.name}" data-price="${product.price}">Add to Cart</button>
+                <button class="cancel" name="${product.name}" data-price="${product.price}">cancel</button>
             </div>
         `);
     });
@@ -30,9 +30,12 @@ $(document).ready(function () {
     })
 
     $(".cart").click(function () {
-        alert("this is your total " + total)
-        total = 0
-        $(".add").text(total.toFixed(2))
+        if (total === 0) {
+            alert("Buy one thing to save the word")
+        } else {
+            alert("🎉 Checkout Success: " + total + " thank you for saving the word ")
+            $(".add").text(total.toFixed(2))
+        }
     })
     $(".cancel").click(function () {
         const price = parseFloat($(this).data("price"));
